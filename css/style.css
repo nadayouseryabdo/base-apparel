@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Patrick+Hand&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    min-height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    width: 36%;
+    height: 100px;
+    padding-top: 50px;
+}
+
+.image {
+    width: 50%;
+    height: 90vh;
+}
+
+.image2 {
+    display: none;
+}
+
+.desc {
+    width: 30%;
+    position: absolute;
+    top: 200px;
+}
+
+.he1 {
+    margin-top: 100px;
+    color: rosybrown;
+    font-weight: 100;
+    font-size: 50px;
+    letter-spacing: 10px;
+    line-height: 20px;
+}
+
+.he2 {
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 10px;
+    line-height: 60px;
+}
+
+p {
+    color: rosybrown;
+    font-size: 14px;
+    line-height: 25px;
+    text-shadow: 0px 0px 2px rosybrown;
+    font-weight: 100;
+    word-spacing: 3px;
+
+}
+
+#mil {
+    width: 89.95%;
+    height: 40px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid rgba(188, 143, 143, 0.473);
+    box-shadow: 0px 0px 2px rosybrown;
+    margin-top: 30px;
+}
+
+input {
+    width: 60%;
+    height: 25px;
+    border: none;
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: rosybrown;
+}
+
+#arr {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-image: linear-gradient(90deg, rgba(188, 143, 143, 0.644), rgb(188, 143, 143));
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-left: 5px;
+    box-shadow: 0.1px 5px 30px rosybrown;
+    cursor: pointer;
+    margin-top: -1px;
+    position: absolute;
+    right: 0;
+}
+
+#arr:hover {
+    transform: scale(1.2);
+}
+
+#err {
+    display: inline-block;
+    position: absolute;
+    right: 85px;
+    margin-top: 7px;
+    visibility: hidden;
+}
+
+#out {
+    color: rgb(224, 61, 61);
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+@media screen and (max-width:1000px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    main {
+        width: 100%;
+        display: block;
+    }
+
+    .logo {
+        padding-left: 50px;
+    }
+
+    .image {
+        width: 50%;
+        height: 90vh;
+        display: none;
+    }
+
+    .image2 {
+        width: 100%;
+        margin-top: 30px;
+        display: block;
+    }
+
+    .image2 img {
+        width: 100%;
+    }
+
+    .desc {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: -40%;
+    }
+
+    p {
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+    #mil {
+        width: 70%;
+    }
+
+    input {
+        margin-left: -25%;
+    }
+
+    #arr {
+        right: 15%;
+    }
+
+    #err {
+        right: 32%;
+
+    }
+
+    #out {
+        margin-left: -140px;
+    }
+}
